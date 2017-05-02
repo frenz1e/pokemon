@@ -1,0 +1,54 @@
+body
+  padding: 10px 0
+
+.tags
+  button
+    margin: 10px 10px 10px 0
+    cursor: pointer
+
+.per-page
+  margin: 10px 0 0
+
+.pokemons-table
+  tr:first-child
+    td
+      border: none
+  td
+    vertical-align: middle
+    &:first-child
+      width: 120px
+    img
+      width: 96px
+      height: 96px
+
+.abilities
+  margin-bottom: 5px
+
+.ability
+  margin-right: 10px
+  font-size: 15px
+
+.stat
+  font-size: 14px
+  font-weight: normal
+  margin-right: 5px
+  &:not(:last-child):after
+    content: '·'
+    color: #777
+    margin-left: 5px
+  .name
+    color: #888
+
+.pagination-wrap
+  display: inline-block
+  position: relative
+  .disabler
+    position: absolute
+    left: 0
+    top: 50%
+    width: 100%
+    height: 36px
+    z-index: 9
+    background: #eee
+    opacity: .4
+    transform: translateY(-50%)
