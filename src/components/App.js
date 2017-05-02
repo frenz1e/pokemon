@@ -18,10 +18,13 @@ class App extends Component {
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col">
-            <h2>
-              Pokedex
-              <Spinner />
-            </h2>
+            <div className="header">
+              <h2>
+                Pokedex
+                <Spinner />
+              </h2>
+              <a href="https://github.com/frenz1e/pokemon" className="github-link"></a>
+            </div>
             <Filter />
             <div className="row">
               <div className="col-md-11">
